@@ -11,7 +11,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
 
 });
 
-// TODO: Implement a click event handler on the `butInstall` element
+// Implement a click event handler on the `butInstall` element
 butInstall.addEventListener('click', async () => {
     // Show the install prompt
     deferredPrompt.prompt();
@@ -23,7 +23,7 @@ butInstall.addEventListener('click', async () => {
     console.log(`User response to the install prompt: ${outcome}`);
 });
 
-// TODO: Add an handler for the `appinstalled` event
+// Add an handler for the `appinstalled` event
 window.addEventListener('appinstalled', (event) => {
     // Log the event details
     console.log('Jate has been installed!', event);
